@@ -4,9 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <link rel="stylesheet" href="static/vitej.css">
     </head>
     <body>
         <h1>Hodně štěstí!</h1>
-        <a href="{{ url_for('formular') }}">Klikni sem pro formulář</a>
+        <a href="{{ url_for('form') }}">Klikni sem pro formulář: {{ login }} , {{ recept }}</a>
     </body>
 </html>
