@@ -10,13 +10,13 @@ message = {
 }
 recepty = "data/recepty.json"
 
-def save():
-    with open(recepty, "w", encoding="UTF-8") as f:
-        json.dump(message, f, indent=4)
+# def save():
+#     with open(recepty, "w", encoding="UTF-8") as f:
+#         json.dump(message, f, indent=4)
 
-def load():
-    with open(recepty, "r", encoding="UTF-8") as f:
-        return json.load(f)
+# def load():
+#     with open(recepty, "r", encoding="UTF-8") as f:
+#        return json.load(f)
 
 
 @app.route("/")
@@ -40,7 +40,7 @@ def form():
         print("autor byl příliš líný na napsání receptu")
 
     if login and recept:
-        save()
+        # save()
         return redirect(url_for(login = login, recept = recept))
         
 
@@ -52,5 +52,5 @@ def form():
 
 
 if __name__ == "__main__": #je název souboru je "__main__" , defaultně je právě tento název
-    message = load()
+    # message = load()
     app.run(debug=True) # umožňuje vidět error kódu 
