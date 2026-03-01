@@ -13,3 +13,25 @@
 ## JSON
 
 8.  data z formuláře ulož také do JSON recepty.json ve složce data
+
+
+# Hodnocení:
+
+✅
+
+❌
+
+🚩chybí uzavření formuláře
+
+🚩ve formuláři chybí name u inputů a proto flask informace nepřijímá, redirect nemá hodnotu, kam by měl redirectovat
+
+🚩v případě krátkého slova flask printuje, místo toho aby data poslal zpět na stránku
+
+❌
+
+❌
+
+🚩nikde není specifikováno co je message, která se má ukládat do jsonu
+
+## Známka: 4
+
